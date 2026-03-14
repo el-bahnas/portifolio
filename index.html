@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed ElBahnasawy | Full Stack .NET Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+
+  <!-- BOOT SCREEN -->
+  <div id="boot-screen">
+    <div class="boot-text" id="boot-text"></div>
+    <div class="boot-bar-wrap"><div class="boot-bar" id="boot-bar"></div></div>
+    <div class="boot-skip">[ PRESS ANY KEY TO SKIP ]</div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main-content" class="hidden">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-logo">&gt; AEB_</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-status">
+        <span id="clock"></span>
+        <span class="status-dot"></span>
+        <span>ONLINE</span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-content">
+        <div class="terminal-line">&gt; INITIALIZING PROFILE...</div>
+        <h1 class="glitch" data-text="Ahmed ElBahnasawy">Ahmed ElBahnasawy</h1>
+        <h2 class="typewriter" id="typewriter"></h2>
+        <p class="hero-desc">
+          Motivated full stack developer passionate about building scalable web
+          applications using .NET technologies and modern frontend frameworks.
+        </p>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/ahmed-ahmed-elbahnasawy" class="btn" target="_blank">[ LinkedIn ]</a>
+          <a href="https://github.com/el-bahnas" class="btn" target="_blank">[ GitHub ]</a>
+          <a href="#" class="btn btn-disabled">[ CV — Coming Soon ]</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img src="photo.jpeg" alt="Ahmed ElBahnasawy" class="hero-photo" id="hero-photo" />
+          <div class="photo-scan"></div>
+          <div class="photo-corner tl"></div>
+          <div class="photo-corner tr"></div>
+          <div class="photo-corner bl"></div>
+          <div class="photo-corner br"></div>
+        </div>
+        <div class="photo-label">&gt; IDENTITY_CONFIRMED</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-tag">//</span>
+        <h2>About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-body">
+        <div class="about-left">
+          <!-- SUMMARY CARD -->
+          <div class="summary-card">
+            <div class="summary-label">&gt; SUMMARY.TXT</div>
+            <p class="summary-text">
+              Full Stack .NET Developer in training, currently studying IT at the Faculty of Computers &amp; Informatics.
+              A graduate of the DEPI Full Stack .NET track — passionate about clean code, scalable APIs, and building
+              things that actually work. Always learning, always shipping.
+            </p>
+          </div>
+          <!-- TERMINAL BIO -->
+          <div class="terminal-box" id="terminal-about">
+            <div class="terminal-titlebar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">about.exe</span>
+            </div>
+            <div class="terminal-content">
+              <p><span class="prompt">C:\&gt;</span> <span class="cmd">run about.exe</span></p>
+              <p class="output" id="about-output"></p>
+            </div>
+          </div>
+        </div>
+        <div class="stats-panel">
+          <div class="stat-item">
+            <span class="stat-label">STATUS</span>
+            <span class="stat-value blink">AVAILABLE_FOR_HIRE</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">LEVEL</span>
+            <span class="stat-value">ENTRY — LVL 01</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">STACK</span>
+            <span class="stat-value">.NET / REACT</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">FACULTY</span>
+            <span class="stat-value">CS &amp; INFORMATICS</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">LOCATION</span>
+            <span class="stat-value">CAIRO, EG</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">COFFEE</span>
+            <div class="xp-bar"><div class="xp-fill" style="width:95%"></div></div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">DEBUG_XP</span>
+            <div class="xp-bar"><div class="xp-fill" style="width:72%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-tag">//</span>
+        <h2>Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-level="90"><div class="skill-icon">&#9670;</div><div class="skill-name">C#</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-card" data-level="85"><div class="skill-icon">&#9670;</div><div class="skill-name">ASP.NET Core</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-card" data-level="80"><div class="skill-icon">&#9670;</div><div class="skill-name">Entity Framework</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-card" data-level="82"><div class="skill-icon">&#9670;</div><div class="skill-name">SQL Server</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-card" data-level="88"><div class="skill-icon">&#9670;</div><div class="skill-name">REST APIs</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-card" data-level="92"><div class="skill-icon">&#9670;</div><div class="skill-name">HTML / CSS</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-card" data-level="85"><div class="skill-icon">&#9670;</div><div class="skill-name">JavaScript</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-card" data-level="78"><div class="skill-icon">&#9670;</div><div class="skill-name">React</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-header">
+        <span class="section-tag">//</span>
+        <h2>Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-timeline">
+
+        <!-- UNIVERSITY -->
+        <div class="edu-card">
+          <div class="edu-icon-col">
+            <div class="edu-icon">&#127979;</div>
+            <div class="edu-connector"></div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-top">
+              <div>
+                <h3 class="edu-title">Faculty of Computers &amp; Informatics</h3>
+                <div class="edu-sub">Bachelor's Degree — Information Technology</div>
+              </div>
+              <div class="edu-badge edu-badge-active">
+                <span class="blink">&#9632;</span> IN PROGRESS
+              </div>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-meta-item">&#128197; 2023 — Present</span>
+              <span class="edu-meta-item">&#128205; Egypt</span>
+            </div>
+            <div class="edu-progress-wrap">
+              <div class="edu-progress-label">
+                <span>DEGREE PROGRESS</span>
+                <span id="edu-pct">0%</span>
+              </div>
+              <div class="edu-bar"><div class="edu-bar-fill" data-target="75"></div></div>
+              <div class="edu-progress-note">Year 3 of 4 — estimated 2027</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DEPI CERTIFICATE -->
+        <div class="edu-card">
+          <div class="edu-icon-col">
+            <div class="edu-icon">&#127942;</div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-top">
+              <div>
+                <h3 class="edu-title">DEPI — Digital Egypt Pioneers Initiative</h3>
+                <div class="edu-sub">Full Stack .NET Development Track</div>
+              </div>
+              <div class="edu-badge edu-badge-done">&#10003; CERTIFIED</div>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-meta-item">&#128197; 2024 — 2025</span>
+              <span class="edu-meta-item">&#127981; Ministry of Communications, Egypt</span>
+            </div>
+            <div class="edu-cert-tags">
+              <span class="cert-tag">C# &amp; .NET</span>
+              <span class="cert-tag">ASP.NET Core</span>
+              <span class="cert-tag">Entity Framework</span>
+              <span class="cert-tag">React</span>
+              <span class="cert-tag">SQL Server</span>
+              <span class="cert-tag">REST APIs</span>
+            </div>
+            <div class="cert-glow-box">
+              <span class="cert-icon">&#127976;</span>
+              <span>Certificate of Completion — Full Stack .NET</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-tag">//</span>
+        <h2>Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card placeholder">
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <span class="project-status blink">[ COMPILING... ]</span>
+          </div>
+          <h3>Loading Project...</h3>
+          <p>This project is currently under construction. Check back soon.</p>
+          <div class="project-tags"><span class="tag">ASP.NET Core</span><span class="tag">React</span></div>
+          <a href="#" class="btn btn-disabled">[ UNAVAILABLE ]</a>
+        </div>
+        <div class="project-card placeholder">
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <span class="project-status blink">[ COMPILING... ]</span>
+          </div>
+          <h3>Loading Project...</h3>
+          <p>Future ASP.NET Core + SQL Server application. Coming soon.</p>
+          <div class="project-tags"><span class="tag">C#</span><span class="tag">SQL Server</span><span class="tag">EF Core</span></div>
+          <a href="#" class="btn btn-disabled">[ UNAVAILABLE ]</a>
+        </div>
+        <div class="project-card add-card">
+          <div class="plus-icon">+</div>
+          <p>More projects coming soon...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <span class="section-tag">//</span>
+        <h2>Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-body">
+        <div class="contact-text">
+          <p>&gt; Feel free to connect with me.</p>
+          <p>&gt; Always open to new opportunities.</p>
+          <p>&gt; Response time: <span class="highlight">fast</span></p>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/ahmed-ahmed-elbahnasawy" class="contact-card" target="_blank">
+            <span class="contact-icon">&#128279;</span>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">ahmed-ahmed-elbahnasawy</div>
+            </div>
+          </a>
+          <a href="https://github.com/el-bahnas" class="contact-card" target="_blank">
+            <span class="contact-icon">&#128025;</span>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">el-bahnas</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&gt; © 2026 Ahmed ElBahnasawy — ALL RIGHTS RESERVED</p>
+      <p class="footer-sub">Built with ♥ and too much caffeine</p>
+    </footer>
+
+  </div>
+
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-trail" id="cursor-trail"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
