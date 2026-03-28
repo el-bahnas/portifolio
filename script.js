@@ -66,6 +66,7 @@ function startPortfolio() {
   initNavHighlight();
   initPhotoHover();
   initContactForm();
+  initCvDownload();
 }
 
 /* ---- CLOCK ---- */
@@ -80,6 +81,44 @@ function initClock() {
   }
   tick();
   setInterval(tick, 1000);
+}
+
+/* ---- CV DOWNLOAD ---- */
+function initCvDownload() {
+  const downloadBtn = document.getElementById('download-cv-btn');
+  if (!downloadBtn) return;
+
+  downloadBtn.addEventListener('click', async (event) => {
+    event.preventDefault();
+
+    const cvPath = downloadBtn.getAttribute('href');
+    const fileName = downloadBtn.getAttribute('download') || 'Ahmed_ElBahnasawy_CV.pdf';
+
+    try {
+      const response = await fetch(cvPath);
+      if (!response.ok) throw new Error('Failed to fetch CV file.');
+
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+
+      const tempLink = document.createElement('a');
+      tempLink.href = blobUrl;
+      tempLink.download = fileName;
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      tempLink.remove();
+
+      URL.revokeObjectURL(blobUrl);
+    } catch (error) {
+      // Fallback: keep a best-effort direct download for browsers that block fetch/blob.
+      const fallbackLink = document.createElement('a');
+      fallbackLink.href = cvPath;
+      fallbackLink.download = fileName;
+      document.body.appendChild(fallbackLink);
+      fallbackLink.click();
+      fallbackLink.remove();
+    }
+  });
 }
 
 /* ---- CUSTOM CURSOR ---- */
