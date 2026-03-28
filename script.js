@@ -65,6 +65,7 @@ function startPortfolio() {
   initScrollAnimations();
   initNavHighlight();
   initPhotoHover();
+  initContactForm();
 }
 
 /* ---- CLOCK ---- */
@@ -106,7 +107,7 @@ const roles = [
   'Full Stack .NET Developer_',
   'C# Enthusiast_',
   'ASP.NET Core Builder_',
-  'React Frontend Dev_',
+  'Angular Frontend Dev_',
   'API Architect_',
 ];
 let roleIndex = 0, charIndex = 0, deleting = false;
@@ -275,3 +276,71 @@ setInterval(() => {
     setTimeout(() => { document.body.style.filter = ''; }, 55);
   }
 }, 3500);
+
+/* ---- CONTACT FORM ---- */
+function handleFormSubmit() {
+  const name    = document.getElementById('f-name').value.trim();
+  const email   = document.getElementById('f-email').value.trim();
+  const subject = document.getElementById('f-subject').value.trim();
+  const message = document.getElementById('f-message').value.trim();
+  const status  = document.getElementById('form-status');
+  const btn     = document.getElementById('send-btn');
+
+  if (!name || !email || !subject || !message) {
+    status.textContent = '>> ERROR: All fields are required.';
+    status.style.color = '#ff4444';
+    return;
+  }
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRe.test(email)) {
+    status.textContent = '>> ERROR: Invalid email format.';
+    status.style.color = '#ff4444';
+    return;
+  }
+  if (message.length > 500) {
+    status.textContent = '>> ERROR: Message exceeds 500 chars.';
+    status.style.color = '#ff4444';
+    return;
+  }
+
+  btn.textContent = '>> TRANSMITTING...';
+  btn.style.pointerEvents = 'none';
+  status.style.color = 'var(--green)';
+
+  let dots = 0;
+  const loading = setInterval(() => {
+    dots = (dots + 1) % 4;
+    status.textContent = '>> SENDING' + '.'.repeat(dots);
+  }, 300);
+
+  setTimeout(() => {
+    clearInterval(loading);
+    const body   = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+    const mailto = `mailto:elbahnas1605@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+
+    status.textContent = '>> MESSAGE_SENT: OK — Check your mail client.';
+    btn.innerHTML = '&#9658; SEND_MESSAGE';
+    btn.style.pointerEvents = '';
+
+    document.getElementById('f-name').value    = '';
+    document.getElementById('f-email').value   = '';
+    document.getElementById('f-subject').value = '';
+    document.getElementById('f-message').value = '';
+    document.getElementById('char-count').textContent = '0 / 500';
+    setTimeout(() => { status.textContent = ''; }, 5000);
+  }, 1800);
+}
+
+/* char counter — runs after DOM ready since form is injected after boot */
+function initContactForm() {
+  const textarea  = document.getElementById('f-message');
+  const charCount = document.getElementById('char-count');
+  if (textarea && charCount) {
+    textarea.addEventListener('input', () => {
+      const len = textarea.value.length;
+      charCount.textContent = `${len} / 500`;
+      charCount.style.color = len > 450 ? '#ff4444' : '';
+    });
+  }
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ahmed ElBahnasawy | Full Stack .NET Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,11 +26,11 @@
     <nav id="navbar">
       <div class="nav-logo">&gt; AEB_</div>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about"><i class="bi bi-person-badge"></i> About</a>
+        <a href="#skills"><i class="bi bi-cpu"></i> Skills</a>
+        <a href="#education"><i class="bi bi-mortarboard"></i> Education</a>
+        <a href="#projects"><i class="bi bi-code-slash"></i> Projects</a>
+        <a href="#contact"><i class="bi bi-send"></i> Contact</a>
       </div>
       <div class="nav-status">
         <span id="clock"></span>
@@ -42,7 +43,7 @@
     <section class="hero" id="hero">
       <div class="hero-grid-bg"></div>
       <div class="hero-content">
-        <div class="terminal-line">&gt; INITIALIZING PROFILE...</div>
+        <div class="terminal-line"><i class="bi bi-terminal"></i> &gt; INITIALIZING PROFILE...</div>
         <h1 class="glitch" data-text="Ahmed ElBahnasawy">Ahmed ElBahnasawy</h1>
         <h2 class="typewriter" id="typewriter"></h2>
         <p class="hero-desc">
@@ -50,9 +51,15 @@
           applications using .NET technologies and modern frontend frameworks.
         </p>
         <div class="hero-links">
-          <a href="https://www.linkedin.com/in/ahmed-ahmed-elbahnasawy" class="btn" target="_blank">[ LinkedIn ]</a>
-          <a href="https://github.com/el-bahnas" class="btn" target="_blank">[ GitHub ]</a>
-          <a href="#" class="btn btn-disabled">[ CV — Coming Soon ]</a>
+          <a href="https://www.linkedin.com/in/ahmed-ahmed-elbahnasawy" class="btn" target="_blank">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/el-bahnas" class="btn" target="_blank">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a href="#" class="btn btn-disabled">
+            <i class="bi bi-file-earmark-person"></i> CV — Coming Soon
+          </a>
         </div>
       </div>
       <div class="hero-photo-wrap">
@@ -64,7 +71,7 @@
           <div class="photo-corner bl"></div>
           <div class="photo-corner br"></div>
         </div>
-        <div class="photo-label">&gt; IDENTITY_CONFIRMED</div>
+        <div class="photo-label"><i class="bi bi-shield-check"></i> IDENTITY_CONFIRMED</div>
       </div>
     </section>
 
@@ -77,16 +84,14 @@
       </div>
       <div class="about-body">
         <div class="about-left">
-          <!-- SUMMARY CARD -->
           <div class="summary-card">
-            <div class="summary-label">&gt; SUMMARY.TXT</div>
+            <div class="summary-label"><i class="bi bi-file-text"></i> SUMMARY.TXT</div>
             <p class="summary-text">
               Full Stack .NET Developer in training, currently studying IT at the Faculty of Computers &amp; Informatics.
               A graduate of the DEPI Full Stack .NET track — passionate about clean code, scalable APIs, and building
               things that actually work. Always learning, always shipping.
             </p>
           </div>
-          <!-- TERMINAL BIO -->
           <div class="terminal-box" id="terminal-about">
             <div class="terminal-titlebar">
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
@@ -100,31 +105,31 @@
         </div>
         <div class="stats-panel">
           <div class="stat-item">
-            <span class="stat-label">STATUS</span>
+            <span class="stat-label"><i class="bi bi-broadcast"></i> STATUS</span>
             <span class="stat-value blink">AVAILABLE_FOR_HIRE</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">LEVEL</span>
+            <span class="stat-label"><i class="bi bi-bar-chart-steps"></i> LEVEL</span>
             <span class="stat-value">ENTRY — LVL 01</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">STACK</span>
-            <span class="stat-value">.NET / REACT</span>
+            <span class="stat-label"><i class="bi bi-stack"></i> STACK</span>
+            <span class="stat-value">.NET / ANGULAR</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">FACULTY</span>
+            <span class="stat-label"><i class="bi bi-building"></i> FACULTY</span>
             <span class="stat-value">CS &amp; INFORMATICS</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">LOCATION</span>
+            <span class="stat-label"><i class="bi bi-geo-alt"></i> LOCATION</span>
             <span class="stat-value">CAIRO, EG</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">COFFEE</span>
+            <span class="stat-label"><i class="bi bi-cup-hot"></i> COFFEE</span>
             <div class="xp-bar"><div class="xp-fill" style="width:95%"></div></div>
           </div>
           <div class="stat-item">
-            <span class="stat-label">DEBUG_XP</span>
+            <span class="stat-label"><i class="bi bi-bug"></i> DEBUG_XP</span>
             <div class="xp-bar"><div class="xp-fill" style="width:72%"></div></div>
           </div>
         </div>
@@ -139,14 +144,63 @@
         <div class="section-line"></div>
       </div>
       <div class="skills-grid">
-        <div class="skill-card" data-level="90"><div class="skill-icon">&#9670;</div><div class="skill-name">C#</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-card" data-level="85"><div class="skill-icon">&#9670;</div><div class="skill-name">ASP.NET Core</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-card" data-level="80"><div class="skill-icon">&#9670;</div><div class="skill-name">Entity Framework</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-card" data-level="82"><div class="skill-icon">&#9670;</div><div class="skill-name">SQL Server</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-card" data-level="88"><div class="skill-icon">&#9670;</div><div class="skill-name">REST APIs</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-card" data-level="92"><div class="skill-icon">&#9670;</div><div class="skill-name">HTML / CSS</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-card" data-level="85"><div class="skill-icon">&#9670;</div><div class="skill-name">JavaScript</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-card" data-level="78"><div class="skill-icon">&#9670;</div><div class="skill-name">React</div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+
+        <div class="skill-card" data-level="90">
+          <div class="skill-icon skill-svg-wrap">
+            <svg viewBox="0 0 128 128"><path fill="currentColor" d="M117.5 33.5l.3-.2c-.6-1.1-1.5-2.1-2.4-2.6L64.3 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-51 28c-1.7 1-2.9 3.5-2.9 5.4v56.3c0 1 .3 2.1.8 2.9l.2-.1 2.9 1.7v-.1l48.1 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l51-28c1.7-1 2.9-3.5 2.9-5.4V36.1c.1-.9-.1-1.9-.8-2.6zM80.3 100.6l-15.1 8.7-15.1-8.7V83.2L65.2 74l15.1 8.7v17.9zm0-45.1l-15.1 8.7-15.1-8.7V38l15.1-8.7L80.3 38v17.5z"/></svg>
+          </div>
+          <div class="skill-name">C#</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-level="85">
+          <div class="skill-icon skill-svg-wrap">
+            <svg viewBox="0 0 128 128"><path fill="currentColor" d="M55.9 129.3c-.5 0-1-.1-1.5-.3l-4.8-2.8c-.7-.4-1-.5-1.4-.5-.5-.2-1-.4-1-.8V112c0-.8.5-1.5 1.3-1.8l13.4-7.7c.4-.2.8-.3 1.3-.3.4 0 .9.1 1.3.3l13.4 7.7c.8.4 1.3 1.1 1.3 1.8v12.9c0 .7-.5 1.4-1.3 1.8l-4.8 2.8c-.5.2-1 .3-1.5.3h-.6l-2.8-1.6-2.2-1.3-1.4.8-2.8 1.6h-.6l-.6.1zM64 .6C29 .6.6 29 .6 64S29 127.4 64 127.4 127.4 99 127.4 64 99 .6 64 .6zM32.8 84.9V43.1L64 25.2l31.2 18v37.7L64 98.8 32.8 84.9z"/></svg>
+          </div>
+          <div class="skill-name">ASP.NET Core</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-level="80">
+          <div class="skill-icon"><i class="bi bi-database-fill-gear"></i></div>
+          <div class="skill-name">Entity Framework</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-level="82">
+          <div class="skill-icon"><i class="bi bi-server"></i></div>
+          <div class="skill-name">SQL Server</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-level="88">
+          <div class="skill-icon"><i class="bi bi-diagram-2-fill"></i></div>
+          <div class="skill-name">REST APIs</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-level="92">
+          <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+          <div class="skill-name">HTML / CSS</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-level="85">
+          <div class="skill-icon skill-svg-wrap">
+            <svg viewBox="0 0 128 128"><path fill="currentColor" d="M2 1v125h125V1H2zm66.8 106.5c0 6.6-3.8 9.6-9.5 9.6-5.1 0-8-2.6-9.5-5.8l5.2-3.1c1 1.8 1.9 3.3 4.1 3.3 2.1 0 3.4-.8 3.4-4V63.5h6.3v44zm23.5 9.6c-5.9 0-9.7-2.8-11.5-6.5l5.2-3c1.3 2.2 3.1 3.9 6.2 3.9 2.6 0 4.3-1.3 4.3-3.1 0-2.1-1.7-2.9-4.6-4.1l-1.6-.7c-4.6-1.9-7.6-4.4-7.6-9.5 0-4.7 3.6-8.3 9.2-8.3 4 0 6.9 1.4 8.9 5l-4.9 3.1c-1.1-1.9-2.2-2.6-4-2.6-1.8 0-2.9 1.1-2.9 2.6 0 1.8 1.1 2.6 3.8 3.7l1.6.7c5.4 2.3 8.4 4.7 8.4 10 0 5.7-4.5 8.8-10.5 8.8z"/></svg>
+          </div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
+        <div class="skill-card" data-level="78">
+          <div class="skill-icon skill-svg-wrap">
+            <svg viewBox="0 0 128 128"><path fill="currentColor" d="M63.9 2.1L7.3 21.4l8.5 73.6 48.1 30.9 48.1-30.9 8.5-73.6L63.9 2.1zm0 13.3l36.9 67.2H87.6l-7.2-17H47.7l-7.2 17H27.1L63.9 15.4zm0 22.4l-11 25.9h22l-11-25.9z"/></svg>
+          </div>
+          <div class="skill-name">Angular</div>
+          <div class="skill-bar"><div class="skill-fill"></div></div>
+        </div>
+
       </div>
     </section>
 
@@ -159,10 +213,9 @@
       </div>
       <div class="edu-timeline">
 
-        <!-- UNIVERSITY -->
         <div class="edu-card">
           <div class="edu-icon-col">
-            <div class="edu-icon">&#127979;</div>
+            <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
             <div class="edu-connector"></div>
           </div>
           <div class="edu-body">
@@ -172,12 +225,12 @@
                 <div class="edu-sub">Bachelor's Degree — Information Technology</div>
               </div>
               <div class="edu-badge edu-badge-active">
-                <span class="blink">&#9632;</span> IN PROGRESS
+                <i class="bi bi-record-circle blink"></i> IN PROGRESS
               </div>
             </div>
             <div class="edu-meta">
-              <span class="edu-meta-item">&#128197; 2023 — Present</span>
-              <span class="edu-meta-item">&#128205; Egypt</span>
+              <span class="edu-meta-item"><i class="bi bi-calendar3"></i> 2023 — Present</span>
+              <span class="edu-meta-item"><i class="bi bi-geo-alt-fill"></i> Egypt</span>
             </div>
             <div class="edu-progress-wrap">
               <div class="edu-progress-label">
@@ -190,10 +243,9 @@
           </div>
         </div>
 
-        <!-- DEPI CERTIFICATE -->
         <div class="edu-card">
           <div class="edu-icon-col">
-            <div class="edu-icon">&#127942;</div>
+            <div class="edu-icon"><i class="bi bi-award-fill"></i></div>
           </div>
           <div class="edu-body">
             <div class="edu-top">
@@ -201,22 +253,22 @@
                 <h3 class="edu-title">DEPI — Digital Egypt Pioneers Initiative</h3>
                 <div class="edu-sub">Full Stack .NET Development Track</div>
               </div>
-              <div class="edu-badge edu-badge-done">&#10003; CERTIFIED</div>
+              <div class="edu-badge edu-badge-done"><i class="bi bi-patch-check-fill"></i> CERTIFIED</div>
             </div>
             <div class="edu-meta">
-              <span class="edu-meta-item">&#128197; 2024 — 2025</span>
-              <span class="edu-meta-item">&#127981; Ministry of Communications, Egypt</span>
+              <span class="edu-meta-item"><i class="bi bi-calendar3"></i> 2024 — 2025</span>
+              <span class="edu-meta-item"><i class="bi bi-building-fill"></i> Ministry of Communications, Egypt</span>
             </div>
             <div class="edu-cert-tags">
               <span class="cert-tag">C# &amp; .NET</span>
               <span class="cert-tag">ASP.NET Core</span>
               <span class="cert-tag">Entity Framework</span>
-              <span class="cert-tag">React</span>
+              <span class="cert-tag">Angular</span>
               <span class="cert-tag">SQL Server</span>
               <span class="cert-tag">REST APIs</span>
             </div>
             <div class="cert-glow-box">
-              <span class="cert-icon">&#127976;</span>
+              <i class="bi bi-trophy-fill cert-icon"></i>
               <span>Certificate of Completion — Full Stack .NET</span>
             </div>
           </div>
@@ -233,30 +285,56 @@
         <div class="section-line"></div>
       </div>
       <div class="projects-grid">
+
         <div class="project-card placeholder">
           <div class="project-top">
             <span class="project-num">01</span>
-            <span class="project-status blink">[ COMPILING... ]</span>
+            <span class="project-status blink"><i class="bi bi-hourglass-split"></i> COMPILING...</span>
           </div>
           <h3>Loading Project...</h3>
           <p>This project is currently under construction. Check back soon.</p>
-          <div class="project-tags"><span class="tag">ASP.NET Core</span><span class="tag">React</span></div>
-          <a href="#" class="btn btn-disabled">[ UNAVAILABLE ]</a>
+          <div class="project-tags">
+            <span class="tag">
+              <svg class="tag-svg" viewBox="0 0 128 128"><path fill="currentColor" d="M55.9 129.3c-.5 0-1-.1-1.5-.3l-4.8-2.8c-.7-.4-1-.5-1.4-.5-.5-.2-1-.4-1-.8V112c0-.8.5-1.5 1.3-1.8l13.4-7.7c.4-.2.8-.3 1.3-.3.4 0 .9.1 1.3.3l13.4 7.7c.8.4 1.3 1.1 1.3 1.8v12.9c0 .7-.5 1.4-1.3 1.8l-4.8 2.8c-.5.2-1 .3-1.5.3h-.6l-2.8-1.6-2.2-1.3-1.4.8-2.8 1.6h-.6l-.6.1zM64 .6C29 .6.6 29 .6 64S29 127.4 64 127.4 127.4 99 127.4 64 99 .6 64 .6zM32.8 84.9V43.1L64 25.2l31.2 18v37.7L64 98.8 32.8 84.9z"/></svg>
+              ASP.NET Core
+            </span>
+            <span class="tag">
+              <svg class="tag-svg" viewBox="0 0 128 128"><path fill="currentColor" d="M63.9 2.1L7.3 21.4l8.5 73.6 48.1 30.9 48.1-30.9 8.5-73.6L63.9 2.1zm0 13.3l36.9 67.2H87.6l-7.2-17H47.7l-7.2 17H27.1L63.9 15.4zm0 22.4l-11 25.9h22l-11-25.9z"/></svg>
+              Angular
+            </span>
+          </div>
+          <a href="#" class="btn btn-disabled"><i class="bi bi-lock-fill"></i> UNAVAILABLE</a>
         </div>
+
         <div class="project-card placeholder">
           <div class="project-top">
             <span class="project-num">02</span>
-            <span class="project-status blink">[ COMPILING... ]</span>
+            <span class="project-status blink"><i class="bi bi-hourglass-split"></i> COMPILING...</span>
           </div>
           <h3>Loading Project...</h3>
           <p>Future ASP.NET Core + SQL Server application. Coming soon.</p>
-          <div class="project-tags"><span class="tag">C#</span><span class="tag">SQL Server</span><span class="tag">EF Core</span></div>
-          <a href="#" class="btn btn-disabled">[ UNAVAILABLE ]</a>
+          <div class="project-tags">
+            <span class="tag">
+              <svg class="tag-svg" viewBox="0 0 128 128"><path fill="currentColor" d="M117.5 33.5l.3-.2c-.6-1.1-1.5-2.1-2.4-2.6L64.3 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-51 28c-1.7 1-2.9 3.5-2.9 5.4v56.3c0 1 .3 2.1.8 2.9l.2-.1 2.9 1.7v-.1l48.1 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l51-28c1.7-1 2.9-3.5 2.9-5.4V36.1c.1-.9-.1-1.9-.8-2.6zM80.3 100.6l-15.1 8.7-15.1-8.7V83.2L65.2 74l15.1 8.7v17.9zm0-45.1l-15.1 8.7-15.1-8.7V38l15.1-8.7L80.3 38v17.5z"/></svg>
+              C#
+            </span>
+            <span class="tag">
+              <svg class="tag-svg" viewBox="0 0 128 128"><path fill="currentColor" d="M64 0C35.1 0 12 8.6 12 24v80c0 15.4 23.1 24 52 24s52-8.6 52-24V24C116 8.6 92.9 0 64 0zm40 104c0 6.4-17.9 12-40 12S24 110.4 24 104v-8.6c8.3 5.1 23.2 8.6 40 8.6s31.7-3.5 40-8.6V104zm0-24c0 6.4-17.9 12-40 12S24 86.4 24 80v-8.6C32.3 76.5 47.2 80 64 80s31.7-3.5 40-8.6V80zm0-24c0 6.4-17.9 12-40 12S24 62.4 24 56v-8.6C32.3 52.5 47.2 56 64 56s31.7-3.5 40-8.6V56zM64 44C41.9 44 24 37.6 24 30s17.9-14 40-14 40 6.4 40 14-17.9 14-40 14z"/></svg>
+              SQL Server
+            </span>
+            <span class="tag">
+              <svg class="tag-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 4.02 2 6.5v11C2 19.98 6.48 22 12 22s10-2.02 10-4.5v-11C22 4.02 17.52 2 12 2zm8 13.5c0 1.38-3.58 2.5-8 2.5s-8-1.12-8-2.5V14c1.77 1.23 5.1 2 8 2s6.23-.77 8-2v1.5zm0-4c0 1.38-3.58 2.5-8 2.5s-8-1.12-8-2.5V10c1.77 1.23 5.1 2 8 2s6.23-.77 8-2v1.5zm-8-1.5c-4.42 0-8-1.12-8-2.5S7.58 5 12 5s8 1.12 8 2.5S16.42 10 12 10z"/></svg>
+              EF Core
+            </span>
+          </div>
+          <a href="#" class="btn btn-disabled"><i class="bi bi-lock-fill"></i> UNAVAILABLE</a>
         </div>
+
         <div class="project-card add-card">
-          <div class="plus-icon">+</div>
+          <i class="bi bi-plus-circle add-icon"></i>
           <p>More projects coming soon...</p>
         </div>
+
       </div>
     </section>
 
@@ -268,33 +346,74 @@
         <div class="section-line"></div>
       </div>
       <div class="contact-body">
-        <div class="contact-text">
-          <p>&gt; Feel free to connect with me.</p>
-          <p>&gt; Always open to new opportunities.</p>
-          <p>&gt; Response time: <span class="highlight">fast</span></p>
+        <div class="contact-left">
+          <div class="contact-text">
+            <p><i class="bi bi-chevron-right"></i> Feel free to connect with me.</p>
+            <p><i class="bi bi-chevron-right"></i> Always open to new opportunities.</p>
+            <p><i class="bi bi-chevron-right"></i> Response time: <span class="highlight">fast</span></p>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/ahmed-ahmed-elbahnasawy" class="contact-card" target="_blank">
+              <i class="bi bi-linkedin contact-icon"></i>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">ahmed-ahmed-elbahnasawy</div>
+              </div>
+            </a>
+            <a href="https://github.com/el-bahnas" class="contact-card" target="_blank">
+              <i class="bi bi-github contact-icon"></i>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">el-bahnas</div>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/ahmed-ahmed-elbahnasawy" class="contact-card" target="_blank">
-            <span class="contact-icon">&#128279;</span>
-            <div>
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">ahmed-ahmed-elbahnasawy</div>
+
+        <!-- EMAIL FORM -->
+        <div class="contact-form-wrap">
+          <div class="terminal-box">
+            <div class="terminal-titlebar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">send_message.exe</span>
             </div>
-          </a>
-          <a href="https://github.com/el-bahnas" class="contact-card" target="_blank">
-            <span class="contact-icon">&#128025;</span>
-            <div>
-              <div class="contact-label">GitHub</div>
-              <div class="contact-value">el-bahnas</div>
+            <div class="terminal-content form-terminal">
+              <p><span class="prompt">C:\&gt;</span> <span class="cmd">compose --to elbahnas1605@gmail.com</span></p>
+              <div class="form-body" id="contact-form-body">
+                <div class="form-field">
+                  <label class="form-label"><i class="bi bi-person"></i> FROM_NAME:</label>
+                  <input type="text" id="f-name" class="form-input" placeholder="Your name..." autocomplete="off" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label"><i class="bi bi-envelope"></i> FROM_EMAIL:</label>
+                  <input type="email" id="f-email" class="form-input" placeholder="your@email.com" autocomplete="off" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label"><i class="bi bi-tag"></i> SUBJECT:</label>
+                  <input type="text" id="f-subject" class="form-input" placeholder="Message subject..." autocomplete="off" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label"><i class="bi bi-chat-left-text"></i> BODY:</label>
+                  <textarea id="f-message" class="form-input form-textarea" placeholder="Type your message here..." rows="5"></textarea>
+                </div>
+                <div class="form-actions">
+                  <span class="form-char-count" id="char-count">0 / 500</span>
+                  <button class="btn" id="send-btn" onclick="handleFormSubmit()">
+                    <i class="bi bi-send-fill"></i> SEND_MESSAGE
+                  </button>
+                </div>
+                <p class="form-status" id="form-status"></p>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
+
       </div>
     </section>
 
     <footer>
-      <p>&gt; © 2026 Ahmed ElBahnasawy — ALL RIGHTS RESERVED</p>
-      <p class="footer-sub">Built with ♥ and too much caffeine</p>
+      <p><i class="bi bi-code-slash"></i> © 2026 Ahmed ElBahnasawy — ALL RIGHTS RESERVED</p>
+      <p class="footer-sub"><i class="bi bi-heart-fill"></i> Built with love and too much caffeine</p>
     </footer>
 
   </div>
